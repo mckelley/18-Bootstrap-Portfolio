@@ -42,14 +42,17 @@ html, body {
 .btn-primary {
     color: black;
     background-color: white;
-   border: none;
-    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.2), 0 4px 5px 0 rgba(0,0,0,0.19);
+    border: none;
+    /*box-shadow: 0 4px 5px 0 rgba(0,0,0,0.2), 0 4px 5px 0 rgba(0,0,0,0.19);*/
+    transition: all .2s ease-in-out; 
 }
 
 .btn-primary:hover {
     color: white;
     background-color:#B4C8FF;
-    border: none;
+    border: 1px white solid;
+    transform: scale(1.1);
+   
 }
 
 .left {
@@ -92,13 +95,6 @@ hr {
 }
 
 
-.imageMe img {
-    height: 70%;
-    width: 50%;
-    align-content: center;
-    
-}
-
 .right {
     text-align: center;
 }
@@ -113,6 +109,7 @@ hr {
     padding-left: 350px;
 }
 
+
 .myprojects {
     padding-left: 350px;
 }
@@ -120,9 +117,23 @@ hr {
 
 
 .btn-outline-secondary:hover {
-    color: white;
+    color: white!important;
     background-color: #b4c8ff;
     border: none;
+}
+
+.skillsbtn {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    margin-left: 350px;
+    transition: width 2s, transform 2s;
+}
+
+.skillsbtn:hover {
+    width: 200px;
+    transform: rotate(360deg);
+    
 }
 
 .table {
@@ -134,9 +145,53 @@ thead {
     text-align: center;
 }
 
+.contact-me {
+    padding-left: 300px;
+}
+
+.mb-4 {
+    align-content: center;
+}
+
+
+
+footer {
+    background-color: #E6E6E6;
+}
+
+.list-unstyled li a {
+    color: black;
+}
+
 
 /*---Media Queries --*/
 @media (max-width: 992px) {
+
+    .myprojects {
+        padding-left: 250px;
+    }
+
+    .aboutme {
+        padding-top: 30px;
+        padding-left: 50px;
+    }
+
+    .table {
+        margin-left: 30px;
+    }
+
+
+    .contact-me {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .skillsbtn {
+        color: white;
+        background-color: #b4c8ff;
+        border: none;
+        margin-left: 30px;
+    }
 
   }
 @media (max-width: 768px) {
@@ -153,12 +208,19 @@ thead {
         margin-left: 30px;
     }
 
-    .left ul {
-        list-style-type: none;
-        align-content: center;
-        margin-left: 150px;
-       
+
+    .contact-me {
+        padding-left: 10px;
+        padding-right: 10px;
     }
+
+    .skillsbtn {
+        color: white;
+        background-color: #b4c8ff;
+        border: none;
+        margin-left: 30px;
+    }
+    
   
 }
 @media (max-width: 576px) {
@@ -174,6 +236,19 @@ thead {
     .table {
         margin-left: 30px;
     }
+
+    .contact-me {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .skillsbtn {
+        color: white;
+        background-color: #b4c8ff;
+        border: none;
+        margin-left: 30px;
+    }
+
   
 }
 
